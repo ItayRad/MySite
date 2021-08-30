@@ -2,7 +2,11 @@ body {
   font-family: "Montserrat";
   text-align: center;
 }
-
+#container {
+  width: 75%;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
 #title {
   background-color: gray;
   color: white;
@@ -18,19 +22,25 @@ body {
   margin-bottom: 2%;
 }
 #technologies {
-  margin-top: -5%;
   background-color: white;
   padding-left: 5%;
   padding-right: 5%;
-  height: 40vh;
+  height: auto;
 }
 
 #demoSites {
+  margin-top: 10%;
   background-color: gray;
   color: black;
   height: 55vh;
+  margin-top: 150px;
 }
-
+#demoSitesCarousel {
+  background-color: gray;
+  color: black;
+  height: 55vh;
+  margin-top: 150px;
+}
 #demoSites a {
   font-weight: 400;
   text-decoration: none;
@@ -118,14 +128,22 @@ h2 {
   padding: 7% 15%;
 }
 
-@media (max-width: 1028px) {
+@media (max-width: 1048px) {
   .iphone-mark {
     position: static;
     transform: rotate(0);
   }
-
+  #container {
+    width: 100%;
+  }
   #title {
     height: auto;
     padding-bottom: 20px;
+  }
+  #demoSitesCarousel {
+    height: auto;
+  }
+  #contact {
+    margin-top: 250px;
   }
 }
